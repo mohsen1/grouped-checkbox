@@ -1,7 +1,7 @@
 grouped-checkbox
 ================
 
-![Demo](./demo.gif =100x)
+<img src="./demo.gif" alt="Demo" width="150px" />
 
 
 Grouped Checkboxes is a [Polymer](http://www.polymer-project.org/) Web Component that makes it easy to have multiple checkboxes that have a parent selector.
