@@ -1,9 +1,9 @@
 grouped-checkbox
 ================
 
-![Demo](demo.png)
+![Demo](demo.gif)
 
-Grouped Checkboxes makes it easy to have multiple checkboxes that have a parent selector.
+Grouped Checkboxes is a [Polymer](http://www.polymer-project.org/) Web Component that makes it easy to have multiple checkboxes that have a parent selector.
 
 ## Usage
 
@@ -19,7 +19,7 @@ Wrap your input elements inside a `<grouped-checkbox>` element. `label` attribut
 
 ### Nesting
 
-You can nest grouped checkboxes just like normal HTML elements
+Nesting `grouped-checkbox` components is possible. You can nest grouped checkboxes just like normal HTML elements
 
 
 ```html
@@ -34,4 +34,5 @@ You can nest grouped checkboxes just like normal HTML elements
   </grouped-checkbox>
 ```
 
+### Nesting Demo
 ![Nested Demo](nested-demo.png)
