@@ -1,0 +1,67 @@
+<!doctype html>
+<!--
+MIT License
+-->
+<html>
+<head>
+
+  <script src="../platform/platform.js"></script>
+  <link rel="import" href="../polymer/polymer.html">
+  <link rel="import" href="../core-component-page/core-component-page.html">
+
+</head>
+<body unresolved>
+
+  <polymer-element name="grouped-checkbox" attributes="label">
+
+    <template>
+      <style>
+        #group > * {
+          display: block;
+          margin-left: 1em;
+        }
+      </style>
+
+      <label>
+        <input type="checkbox" id="all" on-change="{{allChangeListener}}">
+        {{label}}
+      </label>
+      <div id="group" on-change="{{groupChangeListener}}">
+        <content></content>
+      </div>
+    </template>
+
+    <script>
+      Polymer('grouped-checkbox', {
+        label: '',
+
+        get boxes() {
+          return this.querySelectorAll('input[type="checkbox"]').array();
+        },
+
+        allChangeListener: function(){
+          var checked = this.$.all.checked;
+          this.boxes.forEach(function(checkbox) {
+            checkbox.checked = checked;
+          });
+        },
+
+        groupChangeListener: function(){
+         var boxes = this.boxes;
+
+         var allChecked = boxes.reduce(function(result, checkbox){
+          return checkbox.checked && result;
+         }, true);
+         var noneChecked = boxes.reduce(function(result, checkbox){
+           return !checkbox.checked && result;
+         }, true);
+
+         this.$.all.checked = allChecked;
+         this.$.all.indeterminate = !allChecked && !noneChecked;
+        }
+      });
+    </script>
+  </polymer-element>
+
+</body>
+</html>
