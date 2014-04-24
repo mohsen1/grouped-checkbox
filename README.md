@@ -1,7 +1,7 @@
 grouped-checkbox
 ================
 
-![Demo](demo.gif)
+![Demo](demo.gif =100x)
 
 Grouped Checkboxes is a [Polymer](http://www.polymer-project.org/) Web Component that makes it easy to have multiple checkboxes that have a parent selector.
 
@@ -23,15 +23,15 @@ Nesting `grouped-checkbox` components is possible. You can nest grouped checkbox
 
 
 ```html
-  <grouped-checkbox label="Languages">
-    <label><input type="checkbox" name="tech" value="js">JS</label>
-    <label><input type="checkbox" name="tech" value="html">HTML</label>
-    <grouped-checkbox label="CSS">
-      <label><input type="checkbox" name="tech" value="sass">SASS</label>
-      <label><input type="checkbox" name="tech" value="less">Less</label>
-      <label><input type="checkbox" name="tech" value="stylus">Stylus</label>
-    </grouped-checkbox>
+<grouped-checkbox label="Languages">
+  <label><input type="checkbox" name="tech" value="js">JS</label>
+  <label><input type="checkbox" name="tech" value="html">HTML</label>
+  <grouped-checkbox label="CSS">
+    <label><input type="checkbox" name="tech" value="sass">SASS</label>
+    <label><input type="checkbox" name="tech" value="less">Less</label>
+    <label><input type="checkbox" name="tech" value="stylus">Stylus</label>
   </grouped-checkbox>
+</grouped-checkbox>
 ```
 
 ### Nesting Demo
