@@ -1,10 +1,16 @@
 grouped-checkbox
 ================
 
-<img src="./demo.gif" alt="Demo" width="150px" />
+<a href="http://mohsenweb.com/grouped-checkbox/">
+  <img src="./demo.gif" alt="Demo" width="150px" />
+</a>
 
 
 Grouped Checkboxes is a [Polymer](http://www.polymer-project.org/) Web Component that makes it easy to have multiple checkboxes that have a parent selector.
+
+## Demo
+
+See it in action <a href="http://mohsenweb.com/grouped-checkbox/">here</a>
 
 ## Usage
 
@@ -36,4 +42,6 @@ Nesting `grouped-checkbox` components is possible. You can nest grouped checkbox
 ```
 
 ### Nesting Demo
-![Nested Demo](nested-demo.png)
+<a href="http://mohsenweb.com/grouped-checkbox/">
+  <img src="Nested Demo" alt="./nested-demo.png">
+</a>
