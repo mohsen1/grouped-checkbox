@@ -45,3 +45,7 @@ Nesting `grouped-checkbox` components is possible. You can nest grouped checkbox
 <a href="http://mohsenweb.com/grouped-checkbox/">
   <img src="./nested-demo.png" alt="Nested Demo">
 </a>
+
+
+### License
+MIT
