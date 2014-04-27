@@ -1,6 +1,16 @@
 {
   "name": "grouped-checkbox",
-  "private": true,
+  "private": false,
+  "authors": [
+    "Mohsen Azimi"
+  ],
+  "keywords": [
+    "checkbox",
+    "web_components",
+    "form"
+  ],
+  "description": "Grouped Checkboxes is a [Polymer](http://www.polymer-project.org/) Web Component that makes it easy to have multiple checkboxes that have a parent selector.",
+  "license": "MIT",
   "dependencies": {
     "polymer": "Polymer/polymer#master"
   }
