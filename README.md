@@ -2,7 +2,7 @@ grouped-checkbox
 ================
 
 <a href="http://mohsenweb.com/grouped-checkbox/">
-  <img src="./demo.gif" alt="Demo" width="150px" />
+  <img src="https://raw.githubusercontent.com/mohsen1/grouped-checkbox/gh-pages/demo.gif" alt="Demo" width="150px" />
 </a>
 
 
@@ -43,7 +43,7 @@ Nesting `grouped-checkbox` components is possible. You can nest grouped checkbox
 
 ### Nesting Demo
 <a href="http://mohsenweb.com/grouped-checkbox/">
-  <img src="./nested-demo.png" alt="Nested Demo">
+  <img src="https://raw.githubusercontent.com/mohsen1/grouped-checkbox/gh-pages/nested-demo.png" alt="Nested Demo">
 </a>
 
 
