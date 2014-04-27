@@ -1,6 +1,6 @@
 {
   "name": "grouped-checkbox",
-  "private": true,
+  "private": false,
   "dependencies": {
     "polymer": "Polymer/polymer#master"
   }
