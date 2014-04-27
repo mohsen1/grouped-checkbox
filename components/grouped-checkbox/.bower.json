@@ -1,0 +1,18 @@
+{
+  "name": "grouped-checkbox",
+  "private": true,
+  "dependencies": {
+    "polymer": "Polymer/polymer#master"
+  },
+  "homepage": "https://github.com/mohsen1/grouped-checkbox",
+  "_release": "2482c90d1c",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "2482c90d1c5d945aa91330fddf517ff9406b477d"
+  },
+  "_source": "git://github.com/mohsen1/grouped-checkbox.git",
+  "_target": "master",
+  "_originalSource": "mohsen1/grouped-checkbox",
+  "_direct": true
+}

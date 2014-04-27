@@ -1,0 +1,75 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+Groups checkboxes in one element with a "select all" checkbox.
+
+##### Example
+
+    <grouped-checkbox label="Languages">
+      <label><input type="checkbox" name="tech" value="js">JS</label>
+      <label><input type="checkbox" name="tech" value="html">HTML</label>
+    </grouped-checkbox>
+
+@element grouped-checkbox
+@blurb Element providing solution to no problem in particular.
+@status alpha
+@url github.io
+-->
+<polymer-element name="grouped-checkbox" attributes="notitle">
+
+  <template>
+    <style>
+      #group > * {
+        display: block;
+        margin-left: 1em;
+      }
+    </style>
+
+    <label>
+      <input type="checkbox" id="all" on-change="{{allChangeListener}}">
+      {{label}}
+    </label>
+    <div id="group" on-change="{{groupChangeListener}}">
+      <content></content>
+    </div>
+  </template>
+
+  <script>
+    Polymer('grouped-checkbox', {
+
+      /**
+       * The `title` attribute specifies the label used for main checkbox
+       *
+       * @attribute label
+       * @type string
+      */
+      label: '',
+
+      get boxes() {
+        return this.querySelectorAll('input[type="checkbox"],grouped-checkbox').array();
+      },
+
+      allChangeListener: function(){
+        var checked = this.$.all.checked;
+        this.boxes.forEach(function(checkbox) {
+          checkbox.checked = checked;
+        });
+      },
+
+      groupChangeListener: function(){
+       var boxes = this.boxes;
+
+       var allChecked = boxes.reduce(function(result, checkbox){
+        return checkbox.checked && result;
+       }, true);
+       var noneChecked = boxes.reduce(function(result, checkbox){
+         return !checkbox.checked && result;
+       }, true);
+
+       this.$.all.checked = allChecked;
+       this.$.all.indeterminate = !allChecked && !noneChecked;
+      }
+    });
+  </script>
+
+</polymer-element>
