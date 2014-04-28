@@ -15,7 +15,7 @@ Groups checkboxes in one element with a "select all" checkbox.
 @status alpha
 @url github.io
 -->
-<polymer-element name="grouped-checkbox" attributes="notitle">
+<polymer-element name="grouped-checkbox" attributes="label">
 
   <template>
     <style>
@@ -46,7 +46,7 @@ Groups checkboxes in one element with a "select all" checkbox.
       label: '',
 
       get boxes() {
-        return this.querySelectorAll('input[type="checkbox"],grouped-checkbox').array();
+        return this.querySelectorAll('input[type="checkbox"]').array();
       },
 
       allChangeListener: function(){
